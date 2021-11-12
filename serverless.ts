@@ -1,12 +1,13 @@
 import type { AWS } from '@serverless/typescript';
 
-import addUser from '@functions/add user';
-import updateUser from '@functions/update user';
-import getUser from '@functions/get user';
-import deleteUser from '@functions/delete user';
-import getAllUsers from '@functions/get all users';
-import getQueryResults from '@functions/dynamo queries'
-
+import { 
+  addUser, 
+  deleteUser, 
+  getAllUsers, 
+  getUser, 
+  getQueryResults, 
+  updateUser 
+} from '@functions/index'; 
 
 const serverlessConfiguration: AWS = {
   service: 'crud-dynamo-offline',
